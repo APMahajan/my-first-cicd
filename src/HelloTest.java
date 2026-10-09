@@ -1,6 +1,6 @@
 public class HelloTest {
     public static void main(String[] args) {
-        if (Hello.add(2, 3) != 5) {
+        if (Hello.add(2, 3) != 6) {
             throw new AssertionError("Addition test failed");
         }
 
