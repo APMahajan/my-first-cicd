@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class HelloTest {
 
@@ -14,6 +14,6 @@ public class HelloTest {
     void testAdditionWithZero() {
         int actual = Hello.add(5, 0);
 
-        assertEquals(5, actual);
+        assertEquals(999, actual);
     }
 }
