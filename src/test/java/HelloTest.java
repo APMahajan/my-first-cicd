@@ -1,9 +1,19 @@
-public class HelloTest {
-    public static void main(String[] args) {
-        if (Hello.add(2, 3) != 6) {
-            throw new AssertionError("Addition test failed");
-        }
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-        System.out.println("All tests passed!");
+public class HelloTest {
+
+    @Test
+    void testAddition() {
+        int actual = Hello.add(2, 3);
+
+        assertEquals(5, actual);
+    }
+
+    @Test
+    void testAdditionWithZero() {
+        int actual = Hello.add(5, 0);
+
+        assertEquals(5, actual);
     }
 }
