@@ -14,6 +14,6 @@ public class HelloTest {
     void testAdditionWithZero() {
         int actual = Hello.add(5, 0);
 
-        assertEquals(999, actual);
+        assertEquals(5, actual);
     }
 }
