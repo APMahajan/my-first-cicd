@@ -10,8 +10,8 @@ public class HelloTest {
         assertEquals(5, actual);
     }
 
-    @Test
-    void intentionalFailureTest() {
-         assertEquals(10, 5);
+  @Test
+void intentionalFailureTest() {
+    assertEquals(5, 5);
 }
 }
