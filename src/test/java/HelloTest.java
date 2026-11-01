@@ -11,9 +11,7 @@ public class HelloTest {
     }
 
     @Test
-    void testAdditionWithZero() {
-        int actual = Hello.add(5, 0);
-
-        assertEquals(5, actual);
-    }
+    void intentionalFailureTest() {
+         assertEquals(10, 5);
+}
 }
