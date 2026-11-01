@@ -1,0 +1,15 @@
+student:
+  name: Atul
+  course: BTech
+  language: Java
+
+  skills:
+    - Git
+    - GitHub
+    - Docker
+    - Jenkins
+
+  learning:
+    phase: 4
+    topic: GitHub Actions
+    completed: false
