@@ -1,0 +1,24 @@
+name: My First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  greet:
+    name: Greeting Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show trigger
+        run: echo "This workflow was triggered by a GitHub event."
