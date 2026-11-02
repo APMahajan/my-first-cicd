@@ -1,0 +1,23 @@
+name: Concurrency Practice
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Simulate a long build
+        run: |
+          echo "Starting build..."
+          sleep 60
+          echo "Build completed"
